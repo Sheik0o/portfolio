@@ -1,1 +1,230 @@
+body {
+    /* background-color: rgb(43, 43, 43); */
+    background-image: url("image/image.png");
+    background-size: cover;
+}
 
+header {
+    padding-left: 10rem;
+    padding-top: 10rem;
+    background-color: rgb(104, 104, 104);
+    border-radius: 8px;
+}
+
+header p {
+    color: white;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-family: Berkshire Swash,Khula;
+}
+
+.a_propos_moi .container {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+
+}
+
+.a_propos_moi .image,.a_propos_moi .savoir_faire {
+    padding: 1em;
+    text-align: justify;
+}
+
+.a_propos_moi .container img {
+    width: auto;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #eaeaea;
+}
+
+section {
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+section .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+section h4 {
+    text-decoration: underline;
+}
+
+section li {
+    list-style:circle;
+}
+
+.a_propos_moi section img {
+    width: auto;
+    height: 70px;
+    padding: 0.5em;
+    filter: grayscale(1);
+}
+
+section .color img {
+    width: auto;
+    height: 300px;
+    padding: 0.5em;
+}
+
+details {
+    border : 1px solid black;
+    border-radius: 4px;
+    background-color: rgba(214, 214, 214, 0.252);
+    cursor: pointer;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+  
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+
+.tabs { 
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tabs .tab-registers {
+    display: flex;
+    background-color: white;
+}
+
+
+.tabs button {
+    padding: 0.5em;
+    background-color: white;
+    border: none;
+    font: inherit;
+}
+
+.tabs .tab-registers button:hover {
+    cursor: pointer;
+}
+
+.tabs .tab-bodies {
+    padding: 0.5em;
+    background-color: RGB(235, 235, 235);
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.tabs button.active-tab {
+    background-color: rgb(235, 235, 235);
+}
+
+.tabs tr:nth-child(2) > th, td {
+    height: 60px;    
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tabs th {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.tabs tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+.tabs tr h1 {
+    font-size: 25px;
+}
+
+.tabs tr:nth-child(2) th:nth-child(1) {
+    background-color: rgb(185, 119, 119);
+}
+
+.tabs tr:nth-child(2) th:nth-child(2) {
+    background-color: rgb(255, 255, 114);
+}
+
+.tabs tr:nth-child(2) th:nth-child(3) {
+    background-color: rgb(119, 185, 119);
+}
+
+.tabs table {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.checkbox-non-interactive {
+    pointer-events: none; 
+    opacity: 1; 
+}
+
+.profil {
+    height: 60%;
+    width: 50%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    clip-path: polygon(120% 0%, 120% 40%, 50% 120%, 0% 0%);
+    background-color: tomato;
+}
+
+.console-container {
+    
+    font-family:Berkshire Swash,Khula;
+    font-size:4em;
+    height:250px;
+    width:  50%;
+    color:white;
+    display:block;
+    position:relative;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
+
+.console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 1.6em;
+    line-height: 1.4em;
+    margin: 10px auto;
+    margin-top: 80px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.content ul {
+    margin: .5em 2em;
+    padding: 0;
+}
+
+.hidden {
+    opacity:0;
+}
+
+footer {
+    color : white;
+    background-color: rgb(104, 104, 104);
+    padding: 20px;
+    text-align: center;
+}
